@@ -10,23 +10,28 @@
 </head>
 
 <body>
-  <header>
-    <div class="logos">
-      <img src="images/img3.png" alt="" class="logo">
-      <h1>Grafikz</h1>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/img3.png" alt="" class="logo-img">
+      <span class="title">Grafikz</span>
     </div>
-    <div class="nav">
+    <a href="#" class="toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="nav-link">
       <ul>
-        <a href="index.html">
-          <li>Home</li>
-        </a>
-        <li>Cgip</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#exp">Formula</a></li>
+        <li><a href="#canvas">Graph</a></li>
       </ul>
     </div>
-  </header>
-  <div class="form-container">
-    <div class="right-side">
-      <div class="container">
+  </nav>
+
+  <section id="form">
+    <div class="left">
+      <div class="question">
         <p class="text">ENTER THE COORDINATE OF THE TRIANGLE ..</p>
       </div>
       <form action="">
@@ -57,7 +62,8 @@
         <span>General formula: </span>
       </div>
     </div>
-    <div class="wrapper">
+
+    <div class="right">
       <canvas id="canvas"></canvas>
       <p class="t-vertices">Transformed Vertices</p>
       <div class="result">
@@ -81,7 +87,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <script src="script.js"></script>
 </body>
 
