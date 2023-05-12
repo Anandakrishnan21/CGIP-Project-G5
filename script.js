@@ -1,3 +1,10 @@
+const toggleBtn = document.getElementsByClassName("toggle")[0];
+const navLink = document.getElementsByClassName("nav-link")[0];
+
+toggleBtn.addEventListener('click',()=>{
+  navLink.classList.toggle('active')
+})
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const btn = document.getElementById('btn');
@@ -16,6 +23,7 @@ const X3 = document.getElementById('X3');
 const Y1 = document.getElementById('Y1');
 const Y2 = document.getElementById('Y2');
 const Y3 = document.getElementById('Y3');
+
 const matrix = [
   [1, 0],
   [0, -1]
